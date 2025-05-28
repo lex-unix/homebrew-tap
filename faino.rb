@@ -5,20 +5,20 @@
 class Faino < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lex-unix/faino/releases/download/v0.0.1/faino-mac-x86_64.tar.gz"
-      sha256 "47a548794e12637ab85d12da0feee81641dc54aae7d5554db352aa7791c91732"
+      url "https://github.com/lex-unix/faino/releases/download/v0.1.0/faino-mac-x86_64.tar.gz"
+      sha256 "2267ad92af953dfc34978735ff8afc91b61c29480fc6557f3e82423a0430ba73"
 
       def install
         bin.install "faino"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lex-unix/faino/releases/download/v0.0.1/faino-mac-arm64.tar.gz"
-      sha256 "9337ac48487198e8a7f253b3335c2a966a8645006ac06ed1498f714804b0fdda"
+      url "https://github.com/lex-unix/faino/releases/download/v0.1.0/faino-mac-arm64.tar.gz"
+      sha256 "d008046bc8fdac0540707276c11729707db3b16ea116ca2ef5d6ea7b36b52b1d"
 
       def install
         bin.install "faino"
@@ -28,15 +28,15 @@ class Faino < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lex-unix/faino/releases/download/v0.0.1/faino-linux-x86_64.tar.gz"
-      sha256 "25c8e0c1361f12525a9442084c788de77b6a3d7b1af0a6881bd7170e569be62b"
+      url "https://github.com/lex-unix/faino/releases/download/v0.1.0/faino-linux-x86_64.tar.gz"
+      sha256 "b85d8279267564b464f2de4d65c90c70b111dd88c32ff432df95d76ceaf564f4"
       def install
         bin.install "faino"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lex-unix/faino/releases/download/v0.0.1/faino-linux-arm64.tar.gz"
-      sha256 "e51805ed5cc667c236b21d708a56dabbe410bd75eb0b0f66099fd198ade06c90"
+      url "https://github.com/lex-unix/faino/releases/download/v0.1.0/faino-linux-arm64.tar.gz"
+      sha256 "f00a0ec4987ab57eb11a1737648a229ac32d612c742c2e32d04f8915669ba457"
       def install
         bin.install "faino"
       end
